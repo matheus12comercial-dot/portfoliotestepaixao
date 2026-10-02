@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Título do Projeto Três — Nome Sobrenome</title>
+  <meta name="description" content="Sinopse curta do projeto três.">
+  <meta property="og:title" content="Título do Projeto Três — Nome Sobrenome">
+  <meta property="og:description" content="Sinopse curta do projeto três.">
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="../index.html">Nome Sobrenome</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="../index.html#projetos" aria-current="page">Projetos</a>
+        <a href="../index.html#sobre">Sobre</a>
+        <a href="../index.html#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== CAPA ==========
+         O view-transition-name PRECISA ser igual ao do card na página inicial
+         (assim a imagem "viaja" de uma página para a outra). -->
+    <section class="project-hero">
+      <div class="container">
+        <h1>Título do Projeto Três</h1>
+        <div class="media ph ph-3" data-label="Capa do projeto" style="view-transition-name: capa-tres"></div>
+        <!-- Com imagem real:
+             <img class="media" src="../assets/img/projeto-tres-capa.webp" alt="Descrição da cena" style="view-transition-name: capa-tres"> -->
+      </div>
+    </section>
+
+    <!-- ========== FICHA RÁPIDA ========== -->
+    <div class="container">
+      <div class="meta reveal">
+        <div><span>Ano</span><strong>2024</strong></div>
+        <div><span>Formato</span><strong>Videoclipe</strong></div>
+        <div><span>Duração</span><strong>4 min</strong></div>
+        <div><span>Minha função</span><strong>Fotografia e montagem</strong></div>
+      </div>
+    </div>
+
+    <!-- ========== SINOPSE + FICHA TÉCNICA ========== -->
+    <div class="container project-body">
+      <div class="reveal">
+        <span class="eyebrow">Sinopse</span>
+        <p>
+          Escreva aqui a sinopse do projeto em um ou dois parágrafos. Diga do que se trata,
+          qual era a proposta visual e o que tornou o trabalho especial. Textos curtos e diretos funcionam melhor.
+        </p>
+        <p>
+          Se o projeto passou por festivais, recebeu prêmios ou menções, este é o lugar para contar.
+        </p>
+      </div>
+      <dl class="credits reveal" data-delay="1">
+        <dt>Direção</dt><dd>Nome Sobrenome</dd>
+        <dt>Fotografia</dt><dd>Nome Sobrenome</dd>
+        <dt>Montagem</dt><dd>Nome Sobrenome</dd>
+        <dt>Som</dt><dd>Nome Sobrenome</dd>
+        <dt>Produção</dt><dd>Nome Sobrenome</dd>
+      </dl>
+    </div>
+
+    <!-- ========== VÍDEO ========== -->
+    <div class="container reveal" style="padding-bottom: clamp(48px, 8vw, 96px)">
+      <div class="video">
+        <!-- OPÇÃO A (recomendada): YouTube. Troque ID_DO_VIDEO pelo código que aparece no link
+             (youtube.com/watch?v=ID_DO_VIDEO). Apague a <div class="ph"> abaixo.
+
+        <iframe src="https://www.youtube-nocookie.com/embed/ID_DO_VIDEO" title="Título do Projeto Três"
+                loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        -->
+
+        <!-- OPÇÃO B: Vimeo.
+
+        <iframe src="https://player.vimeo.com/video/ID_DO_VIDEO" title="Título do Projeto Três"
+                loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
+        -->
+
+        <!-- OPÇÃO C: arquivo próprio (só para trechos curtos e comprimidos, até uns 5 MB).
+
+        <video controls preload="metadata" poster="../assets/img/projeto-tres-poster.webp">
+          <source src="../assets/video/projeto-tres.mp4" type="video/mp4">
+        </video>
+        -->
+
+        <div class="ph ph-1" data-label="Aqui entra o vídeo (veja os comentários no código)"></div>
+      </div>
+    </div>
+
+    <!-- ========== STILLS / FOTOS DO SET ========== -->
+    <div class="container">
+      <div class="stills">
+        <div class="reveal"><div class="media ph ph-3" data-label="Still 1"></div></div>
+        <div class="reveal" data-delay="1"><div class="media ph ph-3" data-label="Still 2"></div></div>
+        <div class="reveal" data-delay="2"><div class="media ph ph-3" data-label="Still 3"></div></div>
+      </div>
+    </div>
+
+    <!-- ========== NAVEGAÇÃO ENTRE PROJETOS ========== -->
+    <div class="container">
+      <nav class="pager" aria-label="Outros projetos">
+        <a class="prev" href="projeto-dois.html"><small>← Anterior</small>Título do Projeto Dois</a>
+        <a class="next" href="../index.html#projetos"><small>Voltar</small>Todos os projetos</a>
+      </nav>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span id="ano">2026</span> Nome Sobrenome</span>
+      <span>Todos os direitos reservados</span>
+    </div>
+  </footer>
+
+</body>
+</html>

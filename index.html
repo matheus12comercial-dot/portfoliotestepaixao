@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nome Sobrenome — Audiovisual</title>
+  <meta name="description" content="Portfólio de Nome Sobrenome: direção, fotografia e montagem para cinema e audiovisual independente.">
+  <meta property="og:title" content="Nome Sobrenome — Audiovisual">
+  <meta property="og:description" content="Portfólio de direção, fotografia e montagem.">
+  <meta property="og:type" content="website">
+  <!-- Quando tiver uma imagem de capa: <meta property="og:image" content="https://SEU-DOMINIO/assets/img/capa-compartilhamento.jpg"> -->
+  <script>document.documentElement.classList.add('js')</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Nome Sobrenome</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="index.html#projetos">Projetos</a>
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ========== APRESENTAÇÃO ========== -->
+    <section class="hero">
+      <div class="container">
+        <span class="eyebrow reveal">Direção · Fotografia · Montagem</span>
+        <h1 class="reveal" data-delay="1">Histórias em <em>movimento</em></h1>
+        <p class="lead reveal" data-delay="2">
+          Realizadora audiovisual de São Paulo. Trabalho com cinema independente,
+          curtas e documentários, sempre em busca da imagem que conta o que as palavras não alcançam.
+        </p>
+        <a class="hero-cta reveal" data-delay="2" href="#projetos">Ver projetos <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <!-- ========== PROJETOS ========== -->
+    <section id="projetos">
+      <div class="container">
+        <span class="eyebrow reveal">Trabalhos selecionados</span>
+        <h2 class="section-title reveal">Projetos</h2>
+
+        <div class="grid">
+          <!-- CADA CARD = UM PROJETO. Para adicionar outro, copie um bloco <a class="card"> inteiro. -->
+          <a class="card reveal" href="projetos/projeto-um.html">
+            <div class="frame">
+              <!-- Quando tiver a imagem, troque a <div> abaixo por:
+                   <img class="media" src="assets/img/projeto-um-capa.webp" alt="Cena de ..." loading="lazy"> -->
+              <div class="media ph ph-1" data-label="Capa do projeto" style="view-transition-name: capa-um"></div>
+            </div>
+            <div class="card-info">
+              <h3>Título do Projeto Um</h3>
+              <span>Curta · 2025</span>
+            </div>
+          </a>
+
+          <a class="card reveal" data-delay="1" href="projetos/projeto-dois.html">
+            <div class="frame">
+              <div class="media ph ph-2" data-label="Capa do projeto" style="view-transition-name: capa-dois"></div>
+            </div>
+            <div class="card-info">
+              <h3>Título do Projeto Dois</h3>
+              <span>Documentário · 2024</span>
+            </div>
+          </a>
+
+          <a class="card reveal" href="projetos/projeto-tres.html">
+            <div class="frame">
+              <div class="media ph ph-3" data-label="Capa do projeto" style="view-transition-name: capa-tres"></div>
+            </div>
+            <div class="card-info">
+              <h3>Título do Projeto Três</h3>
+              <span>Videoclipe · 2024</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SOBRE ========== -->
+    <section id="sobre">
+      <div class="container about">
+        <div class="reveal">
+          <div class="media ph ph-4" data-label="Foto / retrato"></div>
+        </div>
+        <div class="reveal" data-delay="1">
+          <span class="eyebrow">Sobre</span>
+          <h2 class="section-title" style="margin-bottom:1.6rem">Olhar autoral, processo colaborativo</h2>
+          <p>
+            Texto de apresentação. Conte em dois ou três parágrafos quem você é, o que te move
+            e como gosta de trabalhar. Fale de formação, de festivais e exibições, e do tipo de
+            projeto que você quer fazer a seguir.
+          </p>
+          <p>
+            Este espaço é um exemplo: substitua pelo texto real. Frases curtas funcionam melhor
+            na tela, e uma boa foto faz mais pela apresentação do que um parágrafo a mais.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTATO ========== -->
+    <section id="contato" class="contact">
+      <div class="container reveal">
+        <span class="eyebrow">Contato</span>
+        <p style="margin-bottom:1.6rem;color:var(--muted)">Para trabalhos, parcerias ou só para conversar.</p>
+        <a class="mail" href="mailto:contato@exemplo.com">contato@exemplo.com</a>
+        <div class="socials">
+          <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://vimeo.com/" target="_blank" rel="noopener">Vimeo</a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span id="ano">2026</span> Nome Sobrenome</span>
+      <span>Todos os direitos reservados</span>
+    </div>
+  </footer>
+
+</body>
+</html>
