@@ -1,6 +1,6 @@
 /* ==========================================================
    PORTFÓLIO — SCRIPT
-   Menu mobile, cabeçalho ao rolar, animação de entrada e ano do rodapé.
+   Menu mobile, cabeçalho ao rolar e ano do rodapé.
    ========================================================== */
 (() => {
   const header = document.querySelector('.site-header');
@@ -23,25 +23,6 @@
       btn.setAttribute('aria-expanded', String(open));
     });
     nav.querySelectorAll('a').forEach((a) => a.addEventListener('click', close));
-  }
-
-  // Elementos com class="reveal" aparecem suavemente ao entrar na tela
-  const items = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window) {
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) {
-            e.target.classList.add('is-visible');
-            io.unobserve(e.target);
-          }
-        });
-      },
-      { threshold: 0.12 }
-    );
-    items.forEach((el) => io.observe(el));
-  } else {
-    items.forEach((el) => el.classList.add('is-visible'));
   }
 
   // Ano automático no rodapé

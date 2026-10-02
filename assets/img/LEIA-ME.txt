@@ -1,0 +1,20 @@
+NOMES DE ARQUIVO ESPERADOS PELO SITE (coloque as fotos nesta pasta)
+
+retrato.webp                  Retrato da polaroid na página inicial (4:5, vertical, ~1000x1250 px)
+
+contorcionista-capa.webp      Capa de "O Contorcionista" (horizontal, ~2000 px de largura)
+contorcionista-still-1.webp   Stills da página do projeto (3:2, ~1200x800 px)
+contorcionista-still-2.webp
+contorcionista-still-3.webp
+
+santo-capa.webp               Capa de "SANTO"
+santo-still-1.webp
+santo-still-2.webp
+santo-still-3.webp
+
+compartilhamento.jpg          (opcional) Prévia ao compartilhar o link (1200x630 px)
+
+Dicas:
+- Use letras minúsculas, sem acento e sem espaço no nome.
+- Converta para WebP em squoosh.app (qualidade ~80) para o site abrir rápido.
+- Enquanto uma foto não existir, o site mostra um bloco colorido com o nome do arquivo esperado.

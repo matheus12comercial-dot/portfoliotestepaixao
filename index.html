@@ -3,16 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nome Sobrenome — Audiovisual</title>
-  <meta name="description" content="Portfólio de Nome Sobrenome: direção, fotografia e montagem para cinema e audiovisual independente.">
-  <meta property="og:title" content="Nome Sobrenome — Audiovisual">
-  <meta property="og:description" content="Portfólio de direção, fotografia e montagem.">
+  <title>Maria Neves — Direção de Arte e Produção</title>
+  <meta name="description" content="Maria Neves, diretora de arte e produtora audiovisual em São Paulo. Curtas, documentários e projetos expográficos.">
+  <meta property="og:title" content="Maria Neves — Direção de Arte e Produção">
+  <meta property="og:description" content="Portfólio de direção de arte e produção audiovisual.">
   <meta property="og:type" content="website">
-  <!-- Quando tiver uma imagem de capa: <meta property="og:image" content="https://SEU-DOMINIO/assets/img/capa-compartilhamento.jpg"> -->
-  <script>document.documentElement.classList.add('js')</script>
+  <!-- Imagem de pré-visualização (WhatsApp, Instagram, LinkedIn). Precisa de endereço completo.
+       Quando o domínio estiver no ar, remova os símbolos de comentário e ajuste:
+       <meta property="og:image" content="https://SEU-DOMINIO/assets/img/compartilhamento.jpg"> -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23b8434a'/%3E%3Ctext x='32' y='47' font-family='Georgia,serif' font-size='42' font-style='italic' text-anchor='middle' fill='%23e3e2dc'%3Em%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital@1&family=Rubik+Dirt&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
 </head>
@@ -20,11 +22,12 @@
 
   <header class="site-header">
     <div class="container">
-      <a class="brand" href="index.html">Nome Sobrenome</a>
+      <a class="brand" href="index.html">Maria Neves</a>
       <button class="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
       <nav class="nav" id="nav" aria-label="Principal">
         <a href="index.html#projetos">Projetos</a>
         <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#experiencia">Experiência</a>
         <a href="index.html#contato">Contato</a>
       </nav>
     </div>
@@ -35,53 +38,86 @@
     <!-- ========== APRESENTAÇÃO ========== -->
     <section class="hero">
       <div class="container">
-        <span class="eyebrow reveal">Direção · Fotografia · Montagem</span>
-        <h1 class="reveal" data-delay="1">Histórias em <em>movimento</em></h1>
-        <p class="lead reveal" data-delay="2">
-          Realizadora audiovisual de São Paulo. Trabalho com cinema independente,
-          curtas e documentários, sempre em busca da imagem que conta o que as palavras não alcançam.
-        </p>
-        <a class="hero-cta reveal" data-delay="2" href="#projetos">Ver projetos <span aria-hidden="true">→</span></a>
+
+        <figure class="polaroid">
+          <svg class="pin" viewBox="0 0 48 64" aria-hidden="true">
+            <defs>
+              <linearGradient id="pinBody" x1="0" x2="1">
+                <stop offset="0" stop-color="#e0484d"/>
+                <stop offset=".55" stop-color="#b3252b"/>
+                <stop offset="1" stop-color="#6e1015"/>
+              </linearGradient>
+              <linearGradient id="pinNeedle" x1="0" x2="1">
+                <stop offset="0" stop-color="#e6e6e6"/>
+                <stop offset="1" stop-color="#7c7c7c"/>
+              </linearGradient>
+            </defs>
+            <path d="M23 38h2l-.6 24h-.8z" fill="url(#pinNeedle)"/>
+            <ellipse cx="24" cy="37" rx="14" ry="4.6" fill="#7a1319"/>
+            <path d="M15.5 36C15.5 25 17.5 15 19.5 10.5h9C30.5 15 32.5 25 32.5 36z" fill="url(#pinBody)"/>
+            <ellipse cx="24" cy="10.5" rx="9" ry="3.6" fill="#e0484d"/>
+            <ellipse cx="21.2" cy="23" rx="2" ry="8" fill="#fff" opacity=".32" transform="rotate(6 21.2 23)"/>
+          </svg>
+          <!-- Foto: troque assets/img/retrato.webp por outra com o mesmo nome (proporção 4:5). -->
+          <div class="media ph ph-4" data-label="Retrato · retrato.webp">
+            <img src="assets/img/retrato.webp" alt="Retrato de Maria Neves" onerror="this.remove()">
+          </div>
+          <span class="signature" aria-hidden="true">maria neves</span>
+        </figure>
+
+        <div class="hero-info">
+          <h1 class="name">Maria Neves</h1>
+          <p class="role">Diretora de Arte &amp; Produtora</p>
+          <ul class="contacts">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+              <a href="mailto:mareaneves@hotmail.com">mareaneves@hotmail.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v6M8 7.8v.01M12 17v-6M12 13.5c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5V17"/></svg>
+              <a href="https://linkedin.com/in/marianevess" target="_blank" rel="noopener">linkedin.com/in/marianevess</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-10.5a6.5 6.5 0 0 1 13 0C18.5 15.4 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.3"/></svg>
+              <span>São Paulo, SP</span>
+            </li>
+          </ul>
+          <a class="hero-cta" href="#projetos">Ver projetos</a>
+        </div>
+
       </div>
     </section>
 
     <!-- ========== PROJETOS ========== -->
     <section id="projetos">
       <div class="container">
-        <span class="eyebrow reveal">Trabalhos selecionados</span>
-        <h2 class="section-title reveal">Projetos</h2>
+        <h2 class="section-title">Projetos</h2>
 
         <div class="grid">
-          <!-- CADA CARD = UM PROJETO. Para adicionar outro, copie um bloco <a class="card"> inteiro. -->
-          <a class="card reveal" href="projetos/projeto-um.html">
+          <!-- CADA CARD = UM PROJETO. Para adicionar outro, copie um bloco <a class="card"> inteiro.
+               A capa aparece sozinha quando existir o arquivo assets/img/<nome>-capa.webp -->
+          <a class="card" href="projetos/contorcionista.html">
             <div class="frame">
-              <!-- Quando tiver a imagem, troque a <div> abaixo por:
-                   <img class="media" src="assets/img/projeto-um-capa.webp" alt="Cena de ..." loading="lazy"> -->
-              <div class="media ph ph-1" data-label="Capa do projeto" style="view-transition-name: capa-um"></div>
+              <div class="media ph ph-1" data-label="Capa · contorcionista-capa.webp" style="aspect-ratio:4/3; view-transition-name: capa-contorcionista">
+                <img src="assets/img/contorcionista-capa.webp" alt="Imagem de capa de O Contorcionista" loading="lazy" onerror="this.remove()">
+              </div>
             </div>
             <div class="card-info">
-              <h3>Título do Projeto Um</h3>
-              <span>Curta · 2025</span>
+              <h3>O Contorcionista</h3>
+              <p>Curta-metragem, 2025. Direção de arte e produção.</p>
+              <span class="badge">Melhor Curta-Metragem, Belas Artes Festival 2025</span>
             </div>
           </a>
 
-          <a class="card reveal" data-delay="1" href="projetos/projeto-dois.html">
+          <a class="card" href="projetos/santo.html">
             <div class="frame">
-              <div class="media ph ph-2" data-label="Capa do projeto" style="view-transition-name: capa-dois"></div>
+              <div class="media ph ph-2" data-label="Capa · santo-capa.webp" style="aspect-ratio:4/3; view-transition-name: capa-santo">
+                <img src="assets/img/santo-capa.webp" alt="Imagem de capa de SANTO" loading="lazy" onerror="this.remove()">
+              </div>
             </div>
             <div class="card-info">
-              <h3>Título do Projeto Dois</h3>
-              <span>Documentário · 2024</span>
-            </div>
-          </a>
-
-          <a class="card reveal" href="projetos/projeto-tres.html">
-            <div class="frame">
-              <div class="media ph ph-3" data-label="Capa do projeto" style="view-transition-name: capa-tres"></div>
-            </div>
-            <div class="card-info">
-              <h3>Título do Projeto Três</h3>
-              <span>Videoclipe · 2024</span>
+              <h3>SANTO</h3>
+              <p>Documentário, 2023. Direção de arte e produção.</p>
             </div>
           </a>
         </div>
@@ -90,36 +126,105 @@
 
     <!-- ========== SOBRE ========== -->
     <section id="sobre">
-      <div class="container about">
-        <div class="reveal">
-          <div class="media ph ph-4" data-label="Foto / retrato"></div>
+      <div class="container">
+        <h2 class="section-title">Resumo profissional</h2>
+        <p class="lead-text">
+          Profissional híbrida de cinema com atuação simultânea em Direção de Arte e Produção Audiovisual,
+          em formação pela Belas Artes — SP. Perfil que une a concepção estética da narrativa visual ao
+          controle logístico e financeiro que a viabiliza: da pesquisa iconográfica ao fechamento de
+          orçamento, do moodboard à gestão do cronograma de filmagem. Experiência complementar em
+          logística internacional e expografia de alto padrão pelo mercado de arte contemporânea.
+          Inglês fluente com uso ativo em contextos internacionais.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIÊNCIA ========== -->
+    <section id="experiencia">
+      <div class="container">
+        <h2 class="section-title">Experiência profissional</h2>
+
+        <article class="job">
+          <h3><strong>MN Art Gallery</strong> — Produtora de Eventos e Curadoria <span>· mar. 2024 – dez. 2025</span></h3>
+          <ul>
+            <li>Concebi projetos expográficos com controle total de cronograma físico-financeiro, orçamentos e supervisão de fornecedores e equipe operacional direta.</li>
+            <li>Coordenei a logística internacional estratégica (ArtExpo NY/Spectrum Miami) e mediação institucional em inglês, gerindo documentação aduaneira e montagem sob prazos críticos.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3><strong>MN Art Gallery</strong> — Assistente de Produção <span>· mai. 2021 – jan. 2023 | out. 2023 – fev. 2024</span></h3>
+          <ul>
+            <li>Consolidei repertório operacional e estético em montagem de exposições e suporte logístico.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <h3><strong>Attivo Group</strong> — Estagiária de Customer Experience <span>· mar. 2023 – set. 2023</span></h3>
+          <ul>
+            <li>Apliquei visão analítica e organização de dados para otimização de fluxos operacionais e controle de custos, competência transferida para a eficiência em produção.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== COMPETÊNCIAS ========== -->
+    <section id="competencias">
+      <div class="container">
+        <h2 class="section-title">Competências técnicas</h2>
+        <ul class="skills">
+          <li>Decupagem de Arte</li>
+          <li>Pesquisa Iconográfica</li>
+          <li>Moodboards</li>
+          <li>Paleta de Cores</li>
+          <li>Cenografia</li>
+          <li>Produção de Props</li>
+          <li>Figurino</li>
+          <li>Montagem de Set</li>
+          <li>Expografia</li>
+          <li>Decupagem de Produção</li>
+          <li>Gestão de Cronograma</li>
+          <li>Controle Orçamentário</li>
+          <li>Negociação com Fornecedores</li>
+          <li>Logística Internacional</li>
+          <li>Photoshop</li>
+          <li>Notion</li>
+          <li>Pacote Office</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== FORMAÇÃO E IDIOMAS ========== -->
+    <section id="formacao">
+      <div class="container two-col">
+        <div>
+          <h2 class="section-title">Formação acadêmica</h2>
+          <div class="edu">
+            <strong>Bacharelado em Cinema e Audiovisual</strong>
+            <span>Belas Artes — São Paulo, 2022–2026</span>
+          </div>
+          <div class="edu">
+            <strong>Técnico em Publicidade</strong>
+            <span>FIEBTECH — Barueri, 2018–2020</span>
+          </div>
         </div>
-        <div class="reveal" data-delay="1">
-          <span class="eyebrow">Sobre</span>
-          <h2 class="section-title" style="margin-bottom:1.6rem">Olhar autoral, processo colaborativo</h2>
-          <p>
-            Texto de apresentação. Conte em dois ou três parágrafos quem você é, o que te move
-            e como gosta de trabalhar. Fale de formação, de festivais e exibições, e do tipo de
-            projeto que você quer fazer a seguir.
-          </p>
-          <p>
-            Este espaço é um exemplo: substitua pelo texto real. Frases curtas funcionam melhor
-            na tela, e uma boa foto faz mais pela apresentação do que um parágrafo a mais.
-          </p>
+        <div>
+          <h2 class="section-title">Idiomas</h2>
+          <div class="lang"><strong>Português</strong><span>Nativo</span></div>
+          <div class="lang"><strong>Inglês</strong><span>Fluente</span></div>
+          <div class="lang"><strong>Italiano</strong><span>Básico</span></div>
         </div>
       </div>
     </section>
 
     <!-- ========== CONTATO ========== -->
     <section id="contato" class="contact">
-      <div class="container reveal">
-        <span class="eyebrow">Contato</span>
-        <p style="margin-bottom:1.6rem;color:var(--muted)">Para trabalhos, parcerias ou só para conversar.</p>
-        <a class="mail" href="mailto:contato@exemplo.com">contato@exemplo.com</a>
+      <div class="container">
+        <h2 class="section-title">Contato</h2>
+        <p>Para trabalhos, parcerias ou só para conversar.</p>
+        <a class="mail" href="mailto:mareaneves@hotmail.com">mareaneves@hotmail.com</a>
         <div class="socials">
-          <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
-          <a href="https://vimeo.com/" target="_blank" rel="noopener">Vimeo</a>
-          <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://linkedin.com/in/marianevess" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
     </section>
@@ -128,8 +233,8 @@
 
   <footer class="site-footer">
     <div class="container">
-      <span>© <span id="ano">2026</span> Nome Sobrenome</span>
-      <span>Todos os direitos reservados</span>
+      <span>© <span id="ano">2026</span> Maria Neves</span>
+      <span>São Paulo, SP</span>
     </div>
   </footer>
 

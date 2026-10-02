@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{TITULO}} — Maria Neves</title>
-  <meta name="description" content="{{TITULO}}: {{FORMATO}}, {{ANO}}. Maria Neves, {{FUNCAO}}.">
-  <meta property="og:title" content="{{TITULO}} — Maria Neves">
-  <meta property="og:description" content="{{FORMATO}}, {{ANO}}. {{FUNCAO}}.">
+  <title>SANTO — Maria Neves</title>
+  <meta name="description" content="SANTO: Documentário, 2023. Maria Neves, Diretora de Arte e Produtora.">
+  <meta property="og:title" content="SANTO — Maria Neves">
+  <meta property="og:description" content="Documentário, 2023. Diretora de Arte e Produtora.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23b8434a'/%3E%3Ctext x='32' y='47' font-family='Georgia,serif' font-size='42' font-style='italic' text-anchor='middle' fill='%23e3e2dc'%3Em%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,12 +34,12 @@
     <!-- ========== CAPA ==========
          O view-transition-name PRECISA ser igual ao do card na página inicial
          (assim a imagem "viaja" de uma página para a outra).
-         A imagem aparece sozinha quando existir o arquivo assets/img/{{SLUG}}-capa.webp -->
+         A imagem aparece sozinha quando existir o arquivo assets/img/santo-capa.webp -->
     <section class="project-hero" style="padding-bottom:0">
       <div class="container">
-        <h1>{{TITULO}}</h1>
-        <div class="media banner ph {{COR}}" data-label="Capa · {{SLUG}}-capa.webp" style="view-transition-name: {{VT_NAME}}">
-          <img src="../assets/img/{{SLUG}}-capa.webp" alt="Imagem de capa de {{TITULO}}" onerror="this.remove()">
+        <h1>SANTO</h1>
+        <div class="media banner ph ph-2" data-label="Capa · santo-capa.webp" style="view-transition-name: capa-santo">
+          <img src="../assets/img/santo-capa.webp" alt="Imagem de capa de SANTO" onerror="this.remove()">
         </div>
       </div>
     </section>
@@ -47,10 +47,10 @@
     <!-- ========== FICHA RÁPIDA ========== -->
     <div class="container">
       <div class="meta">
-        <div><span>Ano</span><strong>{{ANO}}</strong></div>
-        <div><span>Formato</span><strong>{{FORMATO}}</strong></div>
-        <div><span>Minha função</span><strong>{{FUNCAO}}</strong></div>
-        {{RECONHECIMENTO}}
+        <div><span>Ano</span><strong>2023</strong></div>
+        <div><span>Formato</span><strong>Documentário</strong></div>
+        <div><span>Minha função</span><strong>Diretora de Arte e Produtora</strong></div>
+        
       </div>
     </div>
 
@@ -60,7 +60,7 @@
         <h2 class="section-title">Meu trabalho no projeto</h2>
         <div class="job">
           <ul>
-{{TRABALHO}}
+            <li>Desenvolvi pesquisa iconográfica e diretrizes visuais integradas à gestão logística de equipe e viabilização estética sob restrições de infraestrutura e orçamento.</li>
           </ul>
         </div>
         <!-- SINOPSE (quando tiver o texto, remova os símbolos de comentário):
@@ -81,20 +81,20 @@
         <!-- OPÇÃO A (recomendada): YouTube. Troque ID_DO_VIDEO pelo código que aparece no link
              (youtube.com/watch?v=ID_DO_VIDEO). Apague a <div class="ph"> abaixo.
 
-        <iframe src="https://www.youtube-nocookie.com/embed/ID_DO_VIDEO" title="{{TITULO}}"
+        <iframe src="https://www.youtube-nocookie.com/embed/ID_DO_VIDEO" title="SANTO"
                 loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>
         -->
 
         <!-- OPÇÃO B: Vimeo.
 
-        <iframe src="https://player.vimeo.com/video/ID_DO_VIDEO" title="{{TITULO}}"
+        <iframe src="https://player.vimeo.com/video/ID_DO_VIDEO" title="SANTO"
                 loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
         -->
 
         <!-- OPÇÃO C: arquivo próprio (só trecho curto e comprimido, até uns 5 MB).
 
-        <video controls preload="metadata" poster="../assets/img/{{SLUG}}-poster.webp">
-          <source src="../assets/video/{{SLUG}}.mp4" type="video/mp4">
+        <video controls preload="metadata" poster="../assets/img/santo-poster.webp">
+          <source src="../assets/video/santo.mp4" type="video/mp4">
         </video>
         -->
 
@@ -107,17 +107,17 @@
          Para mais fotos, copie um bloco <div class="media ..."> e mude o número (-still-4, -still-5...). -->
     <div class="container">
       <div class="stills">
-        <div class="media ph {{COR}}" data-label="Still 1 · {{SLUG}}-still-1.webp"><img src="../assets/img/{{SLUG}}-still-1.webp" alt="" loading="lazy" onerror="this.remove()"></div>
-        <div class="media ph {{COR}}" data-label="Still 2 · {{SLUG}}-still-2.webp"><img src="../assets/img/{{SLUG}}-still-2.webp" alt="" loading="lazy" onerror="this.remove()"></div>
-        <div class="media ph {{COR}}" data-label="Still 3 · {{SLUG}}-still-3.webp"><img src="../assets/img/{{SLUG}}-still-3.webp" alt="" loading="lazy" onerror="this.remove()"></div>
+        <div class="media ph ph-2" data-label="Still 1 · santo-still-1.webp"><img src="../assets/img/santo-still-1.webp" alt="" loading="lazy" onerror="this.remove()"></div>
+        <div class="media ph ph-2" data-label="Still 2 · santo-still-2.webp"><img src="../assets/img/santo-still-2.webp" alt="" loading="lazy" onerror="this.remove()"></div>
+        <div class="media ph ph-2" data-label="Still 3 · santo-still-3.webp"><img src="../assets/img/santo-still-3.webp" alt="" loading="lazy" onerror="this.remove()"></div>
       </div>
     </div>
 
     <!-- ========== NAVEGAÇÃO ENTRE PROJETOS ========== -->
     <div class="container">
       <nav class="pager" aria-label="Outros projetos">
-        {{LINK_ANTERIOR}}
-        {{LINK_PROXIMO}}
+        <a class="prev" href="contorcionista.html"><small>Anterior</small>O Contorcionista</a>
+        <a class="next" href="../index.html#projetos"><small>Voltar</small>Todos os projetos</a>
       </nav>
     </div>
 
